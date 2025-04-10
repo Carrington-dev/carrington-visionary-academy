@@ -992,7 +992,8 @@ section,
 }
 
 .featured-services .service-item .icon i {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: #fff;
   font-size: 36px;
   transition: ease-in-out 0.3s;
 }
