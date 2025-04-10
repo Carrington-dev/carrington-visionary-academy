@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}  {% endblock %}
+
+{% block content %}
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Skilled Plumbers</a></h4>
+          <p>Stay stress-free! Our skilled and experienced plumbers will take care of all your plumbing needs quickly and professionally.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Registered Business</a></h4>
+          <p>As a registered plumbing company, our geyser repairs and replacements are recognized and accepted by insurance companies, ensuring a hassle-free claims process for our clients.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link">Your Trusted Plumbing Solution, Just a Call Away</a></h4>
+          <p>Simple and secure booking system for all your plumbing needs—repairs, installations, and maintenance. We're here for you, anytime you need us.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="" class="stretched-link">Sustainable Plumbing</a></h4>
+          <p>We support eco-friendly solutions and responsible water usage. Enjoy VIP treatment, including priority service and premium workmanship.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Discover Reliable Plumbing Solutions with {{ company }}
+            </h3>
+          <p class="fst-italic">
+            At {{ company }}, we understand that every home and business has unique plumbing needs. Whether you’re dealing with a stubborn clog, a leaky pipe, or planning a full installation, our team is dedicated to delivering top-quality plumbing solutions tailored to your situation. With expert service and personalized care, we’re here to keep things flowing smoothly.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>Expertly Delivered Plumbing Services
+                </h4>
+                <p>Our certified plumbers offer a wide range of services to cover every plumbing issue. From emergency drain cleaning to full bathroom renovations and maintenance plans, we handle it all with precision and care. Trust us to provide dependable, hassle-free service that fits your needs and budget.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>Seamless Booking and Service Delivery</h4>
+                <p>
+                  Getting professional plumbing help has never been easier! From scheduling your appointment to completing the job efficiently, our team takes care of every detail. Enjoy peace of mind with our easy-to-use booking system, prompt response times, and high-quality workmanship.
+
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Count on us for ongoing support and quick solutions. Whether it's a sudden plumbing emergency, expert advice on upgrades, or reliable maintenance, we’re here for you every step of the way. Your satisfaction is our top priority.
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing System Knowledge</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Customer Service</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing Installation & Repair Expertise</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Customer Obsession</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Water Efficiency & Sustainability Solutions</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Emergency Response & On-Site Diagnostics </span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing Technology & Software</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Permits & Regulatory Compliance Assistance</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Health, Safety & Environmental Awareness</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Communication Skills</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-emoji-smile"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Happy Clients</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-journal-richtext"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Projects</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-headset"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Hours Of Support</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Hard Workers</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+<!-- Clients Section -->
+<section id="clients" class="clients section light-background">
+
+  <div class="container">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "480": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            },
+            "640": {
+              "slidesPerView": 4,
+              "spaceBetween": 80
+            },
+            "992": {
+              "slidesPerView": 6,
+              "spaceBetween": 120
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-2.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-3.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-4.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-5.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-6.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-7.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+
+{% endblock %}
+
