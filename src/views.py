@@ -24,6 +24,7 @@ def home():
 def about():
     return render_template("about.html")
 
+
 @app.route("/services")
 def services():
     return render_template("services.html")
@@ -39,3 +40,9 @@ def contact():
 @app.route("/team")
 def team():
     return render_template("team.html")
+
+# Add More About Us Pages
+
+@app.route("/academic-excellence")
+def academic_excellence():
+    return render_template("about/academic_excellence.html")
