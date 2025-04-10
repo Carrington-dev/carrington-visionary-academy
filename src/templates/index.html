@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <h1>Welcome to <span>{{ company }}</span></h1>
+        <p>"We’re a dedicated plumbing team helping you live worry-free, one reliable repair at a time."        </p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Hero Section -->
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Skilled Plumbers</a></h4>
+          <p>Stay stress-free! Our skilled and experienced plumbers will take care of all your plumbing needs quickly and professionally.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Registered Business</a></h4>
+          <p>As a registered plumbing company, our geyser repairs and replacements are recognized and accepted by insurance companies, ensuring a hassle-free claims process for our clients.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link">Your Trusted Plumbing Solution, Just a Call Away</a></h4>
+          <p>Simple and secure booking system for all your plumbing needs—repairs, installations, and maintenance. We're here for you, anytime you need us.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="" class="stretched-link">Sustainable Plumbing</a></h4>
+          <p>We support eco-friendly solutions and responsible water usage. Enjoy VIP treatment, including priority service and premium workmanship.          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Discover Reliable Plumbing Solutions with {{ company }}
+            </h3>
+          <p class="fst-italic">
+            At {{ company }}, we understand that every home and business has unique plumbing needs. Whether you’re dealing with a stubborn clog, a leaky pipe, or planning a full installation, our team is dedicated to delivering top-quality plumbing solutions tailored to your situation. With expert service and personalized care, we’re here to keep things flowing smoothly.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>Expertly Delivered Plumbing Services
+                </h4>
+                <p>Our certified plumbers offer a wide range of services to cover every plumbing issue. From emergency drain cleaning to full bathroom renovations and maintenance plans, we handle it all with precision and care. Trust us to provide dependable, hassle-free service that fits your needs and budget.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>Seamless Booking and Service Delivery</h4>
+                <p>
+                  Getting professional plumbing help has never been easier! From scheduling your appointment to completing the job efficiently, our team takes care of every detail. Enjoy peace of mind with our easy-to-use booking system, prompt response times, and high-quality workmanship.
+
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Count on us for ongoing support and quick solutions. Whether it's a sudden plumbing emergency, expert advice on upgrades, or reliable maintenance, we’re here for you every step of the way. Your satisfaction is our top priority.
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+{% endblock %}
+

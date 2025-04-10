@@ -1,5 +1,20 @@
+from datetime import datetime
 from src import app
 from flask import render_template
+
+@app.context_processor
+def inject_globals():
+    company = "Carrington Visionary Academy"
+    return {
+        "company": company,
+        "year": 2025,
+        "phone": '+27 (0) 67 735 2242',
+        "title": 'Your Gateway to Adventure!',
+        "email": 'hello@carringtonacademy.co.za',
+        "address": "395 Francis Baard Street</p><p>Pretoria Central, 0001/2</p><p>South Africa",
+        "copyright_notice": f"© {datetime.now().year} { company }. All rights reserved.",
+        "copyright": f"""© <span>{datetime.now().year}</span><strong class="px-1 sitename">{ company }.</strong> <span>All Rights Reserved.</span>""",
+    }
 
 @app.route("/")
 def home():
@@ -21,6 +36,6 @@ def portfolio():
 def contact():
     return render_template("contact.html")
 
-@app.route("/register")
-def register():
-    return render_template("register.html")
+@app.route("/team")
+def team():
+    return render_template("team.html")
