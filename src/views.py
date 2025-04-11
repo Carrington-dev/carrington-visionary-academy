@@ -47,6 +47,10 @@ def team():
 def academic_excellence():
     return render_template("about/academic_excellence.html")
 
+@app.route("/our-offering")
+def our_offering():
+    return render_template("about/our_offering.html")
+
 @app.route("/our-principles")
 def our_principles():
     return render_template("about/our_principles.html")
