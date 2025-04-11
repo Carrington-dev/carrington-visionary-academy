@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}  {% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+          <!--Welcome to <span>{{ company }}</span></h1> --> <h1>
+          <h1>{{ company }}<span> Preparing Our Students To Thrive</span></h1>
+          <p>We’re a dedicated teaching team helping young minds grow, one inspired lesson at a time.</p>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- /Hero Section -->
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100" style="background-color:#2cb01d !important;">
+        <div class="service-item position-relative" style="background-color:#2cb01d !important;">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Skilled Educators</a></h4>
+          <p>Stay confident in your child’s future! Our passionate and experienced teachers are dedicated to helping every learner thrive academically, socially, and emotionally.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" style="background-color:#d70fb6 !important;">
+        <div class="service-item position-relative" style="background-color:#d70fb6 !important;">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Registered & Accredited</a></h4>
+          <p>As a fully registered and accredited school, our curriculum meets national education standards, and our qualifications are recognized by educational institutions across the country and abroad.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300" style="background-color:#ffcd05 !important;">
+        <div class="service-item position-relative" style="background-color:#ffcd05 !important;">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link"> Your Trusted Education Partner, Just a Visit Away
+          </a></h4>
+          <p>Whether it’s enrollment, academic support, or extracurricular involvement—our doors are always open. With a simple and secure admissions process, we make joining our school community seamless.
+
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400" style="background-color:#F0151F !important;">
+        <div class="service-item position-relative" style="background-color:#F0151F !important;">
+          <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="" class="stretched-link">Sustainable Learning</a></h4>
+          <p>
+            We promote eco-awareness, responsible citizenship, and future-focused learning. Our learners are encouraged to think globally, act locally, and become positive change-makers.
+
+
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Discover Exceptional Education at
+            {{ company }}
+            </h3>
+          <p class="fst-italic">
+            At {{ company }}, we understand that every learner is unique. Whether your child is just starting their educational journey or preparing for their final exams, our mission is to provide top-quality, individualized education that supports their growth, development, and future success. With expert educators and a nurturing environment, we’re here to keep your child’s potential flowing.
+
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>Expertly Delivered Teaching & Learning
+                </h4>
+                <p>
+                  Our qualified, passionate teachers offer a broad range of subjects and support services to meet the diverse needs of each student. From foundational literacy and numeracy in the early grades to academic excellence and career readiness in high school, we deliver focused, high-impact teaching that builds confidence and competence at every stage.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>Seamless Enrollment & Support</h4>
+                <p>
+                  Getting started with {{ company }} is simple and stress-free. Our smooth admissions process, responsive staff, and clear communication ensure that your family feels supported from day one. We handle the details—so you can focus on what matters most: your child’s education.
+
+
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Whether it’s academic support, mentorship, or career guidance, we’re committed to walking the journey with every learner and parent. From school entry to graduation, we provide consistent support and a strong community focused on growth, values, and success.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing System Knowledge</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Customer Service</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing Installation & Repair Expertise</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Customer Obsession</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Water Efficiency & Sustainability Solutions</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Emergency Response & On-Site Diagnostics </span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Plumbing Technology & Software</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Permits & Regulatory Compliance Assistance</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Health, Safety & Environmental Awareness</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Communication Skills</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-emoji-smile"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Happy Clients</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-journal-richtext"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Projects</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-headset"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Hours Of Support</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Hard Workers</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+<!-- Clients Section -->
+<section id="clients" class="clients section light-background">
+
+  <div class="container">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "480": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            },
+            "640": {
+              "slidesPerView": 4,
+              "spaceBetween": 80
+            },
+            "992": {
+              "slidesPerView": 6,
+              "spaceBetween": 120
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-2.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-3.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-4.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-5.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-6.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-7.png') }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ url_for('static', filename='img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+
+{% endblock %}
+
